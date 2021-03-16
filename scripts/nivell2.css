@@ -1,0 +1,43 @@
+.navegador{
+    background-color: white;
+    border: none;
+}
+.nav {
+    border: none;
+    
+}
+.logo{
+   object-fit: contain;
+   background: none;
+   
+}
+.logo img {
+    height: 10vh;
+    width: 8vw;
+}
+.paginas {
+    background: none;
+}
+
+.portada {
+    height: 55vh;
+    position: relative;
+    background-color: white;
+    border: none;
+}
+.portada img {
+    height: 55vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.principal{
+    position: absolute;
+    width: 100%;
+    color: salmon;
+    text-shadow: 2px 1px 1px black;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0.8;
+    border: none;
+}
