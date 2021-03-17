@@ -1,43 +1,245 @@
-.navegador{
-    background-color: white;
-    border: none;
+body {
+  box-sizing: border-box;
+}
+/* Menu nav*/
+.navegador {
+  background-color: rgb(223, 213, 213);
+  border: none;
+  position: sticky;
 }
 .nav {
-    border: none;
-    
+  border: none;
 }
-.logo{
-   object-fit: contain;
-   background: none;
-   
+.logo {
+  background: none;
+  display: flex;
 }
 .logo img {
-    height: 10vh;
-    width: 8vw;
+  object-fit: contain;
+  height: 11vh;
+  width: 8vw;
 }
 .paginas {
-    background: none;
+  border: 2px solid salmon;
+  border-radius: 15px;
+  height: 8vh;
+  background: white;
+  opacity: 0.7;
 }
-
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: salmon;
+  text-shadow: 1px 1px 0px black;
+  margin: auto;
+  cursor: pointer;
+}
+.nav-menu a:hover {
+  color: black;
+  text-shadow: 1px 1px 0px salmon;
+  font-size: 30px;
+}
+.nav-menu-icons {
+  display: flex;
+  padding: 20px;
+  font-size: 25px;
+  margin: auto;
+}
+.nav-menu-icons a {
+  text-decoration: none;
+  color: salmon;
+  text-shadow: 1px 1px 0px black;
+  margin: auto;
+}
+.nav-menu-icons a:hover {
+  color: black;
+  text-shadow: 1px 1px 0px salmon;
+  font-size: 35px;
+}
+/* Encabezado */
 .portada {
-    height: 55vh;
-    position: relative;
-    background-color: white;
-    border: none;
+  height: 40vh;
+  position: relative;
+  background-color: white;
+  border: none;
 }
 .portada img {
-    height: 55vh;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
 }
-.principal{
-    position: absolute;
+.principal {
+  position: absolute;
+  width: 100%;
+  color: salmon;
+  text-shadow: 2px 1px 1px black;
+  font-size: 40px;
+  text-align: center;
+  opacity: 0.6;
+  border: none;
+}
+/* Articulos */
+.articulos {
+  background-color: rgb(250, 241, 241);
+  border: none;
+  height: 190vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.contenido {
+  height: 0vh;
+  background: white;
+  margin: 15px 25px;
+}
+/* aside */
+.aside {
+  background: rgb(233, 141, 141);
+  border: none;
+}
+.laterales {
+  border: none;
+  height: 65vh;
+  border-radius: 10px;
+  max-width: 25em;
+  margin: 1em;
+  background-color: rgba(250, 250, 250, 0.95);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+/* items */
+.items {
+  border: none;
+  height: 55vh;
+  max-width: 700px;
+  border-radius: 10px;
+  background-color: rgba(250, 250, 250, 0.95);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.largo {
+  max-width: 1000px;
+}
+
+.item__imagen {
+  height: 25vh;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.item__imagen img {
+  opacity: 0.8;
+  width: 100%;
+}
+
+.item__contenido {
+  padding: 1em 1em 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.item__cabecera {
+  border-bottom: 1px solid salmon;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.item__nombre {
+  margin: 0;
+  color: salmon;
+  font-size: 21px;
+  text-shadow: 1px 1px 0px black;
+  font-style: italic;
+}
+
+.item__fechas {
+  color: salmon;
+  font-size: 80%;
+}
+
+.item__bio {
+  font-size: 0.8em;
+  line-height: 1.5;
+  flex-grow: 1;
+  color: salmon;
+  text-align: center;
+}
+
+.item__pie {
+  background-color: salmon;
+  color: white;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  margin-right: -1em;
+  margin-left: -1em;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 20vh;
+  background-color: salmon;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  margin: auto;
+  padding: 0.5em;
+}
+
+/* Formato tablet */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .articulos {
+    height: 400vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenido {
+    border-right: none;
     width: 100%;
-    color: salmon;
-    text-shadow: 2px 1px 1px black;
-    font-size: 40px;
-    text-align: center;
-    opacity: 0.8;
-    border: none;
+    flex-wrap: wrap;
+  }
+}
+
+/* Formato mobil */
+@media only screen and (max-width: 500px) {
+  body {
+    padding: 10px;
+    margin: 10px;
+  }
+  .navegador {
+    height: 35vh;
+  }
+  .articulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido {
+    background-color: white;
+  }
 }
