@@ -24,7 +24,7 @@ body {
 /* navegador */
 .navegador {
   background-color: var(--nav-principal);
-  height: 15vh;
+  padding: 0.6em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -34,29 +34,24 @@ body {
 }
 .nav {
   background-color: var(--items-nav);
-  height: 10vh;
   margin: 0 10px;
+  padding: 1.7em 0.2em;
   border: 3px solid rgb(58, 82, 22);
 }
 .logo {
-  /* width: 15%; */
   flex-grow: 1;
-  flex-basis: auto;
 }
 .paginas {
-  /* width: 45%; */
   flex-grow: 4;
-  flex-basis: auto;
 }
 .redes {
   flex-grow: 1;
   flex-basis: auto;
-  /* width: 15%; */
 }
 /* Portada */
 .portada {
-  height: 15vh;
-  padding: 1px;
+  /* height: 15vh; */
+  padding: 0.6em;
   background-color: var(--portada);
   border-bottom: 10px solid black;
   border-left: 10px solid black;
@@ -66,17 +61,18 @@ body {
   align-items: center;
 }
 .principal {
-  height: 10vh;
+  padding: 0.3em;
   flex-basis: 100%;
   margin: 20px 20px;
-  padding: 1px;
+  /* padding: 1px; */
   border: 2px solid brown;
   background-color: var(--principal-portada);
 }
 
 .articulos {
   margin-top: 2vh;
-  height: 30vh;
+  /* height: 30vh; */
+  padding: 0.5em;
   border: var(--bordes);
   display: flex;
   flex-basis: 100%;
@@ -85,12 +81,12 @@ body {
 .contenido {
   background-color: var(--contenido);
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   flex-basis: 75%;
   justify-content: space-between;
   align-items: center;
   border-right: 5px solid black;
+  /* padding: 2rem; */
 }
 .aside {
   background-color: var(--aside);
@@ -98,6 +94,7 @@ body {
   flex-flow: row wrap;
   flex-basis: 25%;
   border-left: 5px solid black;
+  padding: 2rem;
 }
 
 .items {
@@ -196,6 +193,7 @@ body {
   }
 
   .articulos {
+    min-height: 120vh;
     display: flex;
     flex-direction: column;
     border: 20px solid rgb(212, 243, 38);

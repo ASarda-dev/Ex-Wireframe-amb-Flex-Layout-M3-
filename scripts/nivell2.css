@@ -234,6 +234,7 @@ body {
   .navegador {
     height: 35vh;
   }
+ 
   .articulos {
     display: flex;
     flex-direction: column;
