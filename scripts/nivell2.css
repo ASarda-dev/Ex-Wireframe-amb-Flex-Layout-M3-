@@ -216,11 +216,12 @@ body {
     height: 400vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .contenido {
     border-right: none;
-    width: 100%;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
