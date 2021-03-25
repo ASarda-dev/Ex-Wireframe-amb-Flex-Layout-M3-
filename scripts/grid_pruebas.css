@@ -94,25 +94,9 @@ grid-column-end: 4;
     grid-column-start: 1;
     grid-column-end: 4;
   }
-  /* Enlazar con el nivel dos */
-.niveldos {
-  /* background-color: rgb(227, 124, 124); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.niveldos a {
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  background-color: rgb(205, 120, 50);
-  padding: 5px;
-  font-size: 25px;
-  border: 2px solid black;
-  cursor: pointer;
-}
+  
+  
 
- /* Formato tablet */
 @media only screen and (max-width: 768px) {
   body {
     padding: 10px;
@@ -140,7 +124,7 @@ grid-column-end: 4;
   }
 }
 
-/* Formato mobil */
+
 @media only screen and (max-width: 500px) {
   body {
     padding: 10px;
@@ -155,7 +139,7 @@ grid-column-end: 4;
     grid-column-end: 4;
      grid-row-start: 1;
     grid-row-end: 4; 
-    /* grid-column: span 2; */
+   
    
   }
   .articulos {
